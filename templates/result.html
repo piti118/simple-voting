@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10">
+    <title>FlaskApp</title>
+</head>
+<body>
+<h1>Voting Result</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Count</th>
+    </tr>
+    {% for name, count in tally.items() %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ count }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<h4>
+    {{ now }}
+</h4>
+</body>
+</html>
